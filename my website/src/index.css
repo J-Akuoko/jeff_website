@@ -1,0 +1,425 @@
+body,
+#root,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+    overflow-x: hidden;
+}
+
+:root{
+    --twitter-blue: #1DA1F2
+}
+
+.header_items {
+    display: flex;
+    background-color: aliceblue;
+    font-family: alegreya;
+    width: 100%;
+    position: fixed;
+    padding: 0.8rem;
+    box-shadow: 5px 5px 5px rgba(0.3, 0.3, 0.3, 0.1);
+    border-radius: 0.5rem;
+    z-index: 999;
+
+}
+
+.navlink {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    transition: background-color 500ms ease-in-out, transform 500ms ease-in-out ;
+
+}
+.navlink:hover{
+    background-color: rgb(184, 203, 243);
+    transform: scale(1.05);
+}
+
+.home {
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 500ms ease-in-out, transform 500ms ease-in-out ;
+
+
+}
+.home:hover{
+    transform: scale(1.05);
+    border-radius: 0.5rem;
+
+}
+
+.active {
+    font-weight: bolder;
+
+}
+
+.navlink:hover {
+    color: blue
+}
+
+.fff {
+    background-color: white;
+}
+
+
+.header_items p {
+    margin-left: 1.5rem;
+
+}
+
+h5 {
+    text-wrap: nowrap;
+    color: black;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.description {
+    margin-top: 4.3rem;
+}
+
+.description p {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 18px;
+    height: 15px;
+    object-fit: cover;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+    transition: transform 200ms ease-in;
+}
+
+.jeff_image img:hover {
+    transform: scale(1.05);
+    transition: 700ms;
+
+}
+
+
+.jeff_image img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 40rem;
+    animation: shade_in 900ms ease-in-out;
+    ;
+
+}
+.description h1{
+    padding-top: 1rem;
+}
+
+
+.about_jeff {
+    padding: 3.5rem;
+    margin-top: 3rem;
+    text-align: justify;
+    background-color: #04263b;
+    border-radius: 0.5rem;
+
+}
+
+.quote_open {
+    position: absolute;
+    top: 1rem;
+    left: 0%;
+    width: 2.5rem;
+    height: 2rem
+}
+
+.quote_close {
+    position: absolute;
+    left: 18rem;
+    width: 3.5rem;
+    height: 2rem
+}
+
+@keyframes shade_in {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.theme_btn {
+    position: fixed;
+    background: linear-gradient(45deg, var(--twitter-blue), white);
+    color: white;
+    top: 1.5%;
+    left: 85%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    z-index:999;
+}
+
+.cv_container a {
+    border: none;
+    padding: 0.5rem;
+    background-color: hsla(240, 70%, 38%, 0.634);
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.cv_container {
+    margin-top: 3rem;
+
+}
+
+.image_grid {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1rem;
+
+
+
+}
+
+
+.lewa img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(38, 38, 38, 0.3);
+
+
+
+}
+.lewa p{
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(80, 79, 79);
+}
+.lewa img:hover {
+    transform: scale(1.02);
+}
+
+.all {
+    position: absolute;
+    top: 100%
+}
+
+.poetic_earth{
+    margin-top: 4.5rem;
+    width:100vw;
+    height: 100vh;
+
+}
+
+ .our_universe{
+    padding: 7rem;
+    animation: shade_in 900ms ease-in-out;
+   
+}
+.our_universe h1{
+    margin-top: 5.5rem;
+    
+}
+.earth_poem{
+    width:100%;
+    margin: 0 auto;
+
+}
+
+
+.our_universe p{
+    color:rgb(161, 157, 157);
+    
+}
+
+.research_container{
+    display: flex;
+    width: 100%;
+    gap:1rem;
+    margin-bottom: 1rem;
+    
+  }
+
+  .serp_img{
+    width: 50%;
+    position: relative;
+  }
+
+  .serp_img img{
+    width:100%;
+    height: 30rem;
+    margin: 0;
+    transition: opacity 600ms ease-in;
+  }
+  .serp_desc{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in, visibility 500ms ease-in; 
+   
+    
+}
+
+.serp_desc h2{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.serp_img img{
+    transition: transform 500ms ease-in-out;
+}
+.serp_img img:hover{
+    opacity: 0.6;
+    transform: scale(1.02);
+
+  
+  }
+
+  .serp_img:hover .serp_desc{
+    visibility: visible;
+    opacity: 1;
+
+  }
+  .serp_article{
+    margin-top:4.5rem;
+    padding: 0 7rem;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1rem;
+  }
+.public_date{
+    color:gray;
+
+}
+ .contact{
+    margin-top: 4rem;
+    height: 100vh;
+    padding-top: 2rem;
+    font-family: poppins;
+    
+ }
+
+ .input_data{
+    width:30rem;
+    border: solid gray 0.5px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+ }
+ 
+ .message_input{
+    height: 10rem;
+    width:30rem;
+    border: solid gray 0.5px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+ }
+
+ .submit_message{
+    border: none;
+    background-color: var(--twitter-blue);
+    color: white;
+    border-radius: 3.5rem;
+    opacity: 1;
+    transition: opacity 500ms ease-in ;
+    padding: 0.5rem;
+    width:6rem;
+ }
+ .submit_message:hover{
+    opacity: 0.7;
+
+ }
+ .footer{
+    text-align: start;
+    background-color: rgb(165, 160, 160);
+    margin-top: 5rem;
+    font-family: poppins;
+    padding: 1rem;
+ }
+
+ .AI_container{
+    position: relative;
+    text-wrap: nowrap;
+ }
+ .AI_insc1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-wrap: nowrap;
+    color: azure;
+
+
+ }
+
+ .AI_insc2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+    color: bisque
+
+
+ }
+
+ .dl1{
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+
+ }
+
+ .hydro_predict{
+    animation: shade_in 900ms ease-in-out;
+ }
+
+ .predicting_h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    transition: opacity 500ms ease-in-out;
+    color:white
+ }
+ .h2_container:hover .predicting_h2{
+    visibility: visible;
+    opacity: 1;
+ }
+
+ .dl1{
+    opacity: 1;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+ }
+
+ .dl1:hover{
+    opacity: 0.7;
+    transform: scale(1.02);
+ }
+
+@media screen and (max-width: 1200px) {
+    .theme_btn {
+        display: none;
+    }
+}
